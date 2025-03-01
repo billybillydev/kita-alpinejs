@@ -19,7 +19,8 @@ export function get() {
               </p>
             </div>
 
-            <div>
+            <div x-data="{ count: '' }">
+              <input type="text" x-model="count" x-bind:class="count ? 'bg-red-200' : ''" placeholder="type here" />
               <button x-on:click="console.log('click')">Click me</button>
             </div>
 
